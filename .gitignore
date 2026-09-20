@@ -1,0 +1,20 @@
+# Personal data -- never commit your own MAL export
+*.xml
+
+# Cached embeddings -- large binary file, regenerate locally instead
+*.npy
+
+# Raw dataset -- large file, link to Kaggle source in README instead
+anime_dataset.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables / secrets
+.env
+
+# OS junk
+.DS_Store
