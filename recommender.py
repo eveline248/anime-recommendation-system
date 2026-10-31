@@ -63,7 +63,7 @@ df["popularity_norm"] = (df["popularity_score"] - df["popularity_score"].min()) 
 already_rated_ids = set(rated_df["mal_id"])
 
 #clustering
-n_clusters = 3
+n_clusters = 2
 kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
 cluster_labels = kmeans.fit_predict(rated_embeddings)
 
